@@ -1,11 +1,445 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style/style.css" />
+  <link rel="stylesheet" href="media_query.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <title>Portfolio</title>
 </head>
+
 <body>
+  <header>
+    <nav id="desktop-nav">
+      <div class="logo">Nayeemul</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Nayeemul</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section id="profile">
+    <div class="section__pic-container">
+      <img class="profile_img_decoration" src="./assets/nayeem.jpeg" alt="Nayeemul profile picture" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Nayeemul Islam Durjoy</h1>
+      <p class="section__text__p2">Mobile App Developer</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">
+          Download CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contact Info
+        </button>
+      </div>
+      <p class="follow_me">Follow Me</p>
+      <div id="socials-container">
+        <img src="./assets/facebook.png" alt="My Facebook profile" class="icon"
+          onclick="location.href='https://facebook.com/nayeem.islam.90/'" />
+        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
+          onclick="location.href='https://linkedin.com/in/nayeem-islam-durjoy/'" />
+        <img src="./assets/github.png" alt="My Github profile" class="icon"
+          onclick="location.href='https://github.com/NayeemCseMu'" />
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="./assets/nayeem.jpeg" alt="Profile picture" class="about-pic" />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+            <h3>Experience</h3>
+            <p>2.5+ years <br />App Development</p>
+          </div>
+          <div class="details-container">
+            <img src="./assets/education.png" alt="Education icon" class="icon" />
+            <h3>Education</h3>
+            <p>B.Sc. in CSE (2020)<br />CGPA: 3.54</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            I’m a Flutter developer, working on mobile applications for nearly 3 years. During this period of work I
+            developed mobile applications for Android and iOS platforms using the Flutter framework. In addition, I’m
+            also proficient in Java and Kotlin programming languages. The volume of projects I have worked on is mainly
+            eCommerce-based products with major functionalities like chat, payment etc. Moreover, I’m more handy to work
+            on any type of project as per requirements.
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+  </section>
+  
+  <section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Experience</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Skills</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h4>Flutter</h4>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h4>Android</h4>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h4>iOS</h4>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h4>Flutter Web</h4>
+                <p>Intermediate</p>
+              </div>
+            </article>
+
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h4>Java</h4>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h4>Dart</h4>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h4>Kotlin</h4>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h4>Git</h4>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h4>Firebase</h4>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h4>RestAPI</h4>
+                <p>Experienced</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="work-timeline-container">
+          <h2 class="experience-sub-title">Timeline</h2>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="tl-icon">
+                <i class="fas fa-briefcase"></i>
+              </div>
+              <p class="tl-duration">Apr, 2022 - present</p>
+              <h4>Sr. Flutter Developer<span> - Quomodosoft</span></h4>
+              <ol>
+                <li class="role-li">
+                  Mobile app team lead
+                </li>
+                <li class="role-li">
+                  Practicing business logic
+
+                </li>
+                <li class="role-li">
+                  Integrate chat and payment method
+
+                </li>
+                <li class="role-li">
+                  RestAPI & third-party SDK integration
+                </li>
+              </ol>
+              <!-- <p class="role-description-text">
+                Responsibility is to converting figma design into flutter | interact with clients to transfer their
+                requirements in real time applications | write clean code using bloc pattern | frequently maintain
+                communication with backend team to integrate REST API | implement third party SDK |
+                developed full solution multivendor ecommerce app – user, seller, delivery-man |
+              </p> -->
+            </div>
+
+            <div class="timeline-item">
+              <div class="tl-icon">
+                <i class="fas fa-briefcase"></i>
+              </div>
+              <p class="tl-duration">Dec, 2021 - March, 2022</p>
+              <h4>Flutter Developer<span> - Salah Software</span></h4>
+              <ol>
+                <li class="role-li">
+                  Developed interactive UI
+                </li>
+                <li class="role-li">
+                  RestAPI and SDK integration
+
+                </li>
+                <li class="role-li">
+                  Write native android code
+
+                </li>
+              </ol>
+            </div>
+
+            <div class="timeline-item">
+              <div class="tl-icon">
+                <i class="fas fa-briefcase"></i>
+              </div>
+              <p class="tl-duration">Mar, 2019 - Feb, 2020</p>
+              <h4>Android Developer<span> - AppsticIT.</span></h4>
+              <p class="role-li">
+                I joined AppsticIt in my 10th semester of university. As an intern, I used to developed android
+                application in Java language.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+  </section>
+
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
     
+      <div class="project__containers">
+        
+        <div class="details-container color-container">
+          <div class="project__pic__container">
+          
+            <img
+              src="./assets/shopo.png"
+              alt="shopo"
+              class="project-img"
+            />
+          
+        </div>
+          <h4 class="experience-sub-title project-title">ShopO <span class="subtitle"><br>Multivendor ecommerce solution</span></h4>
+          <div class="btn-container">
+            
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://codecanyon.net/item/shopo-multivendor-ecommerce-flutter-app/39965496'"
+            >
+              Live Demo
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="project__pic__container">
+          
+            <img
+              src="./assets/unice.jpg"
+              alt="ShopO"
+              class="project-img"
+            />
+          
+        </div>
+          <h2 class="experience-sub-title project-title">UNICE <span class="subtitle"><br>UNICE INTRODUTION APP</span></h2>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://play.google.com/store/apps/details?id=com.unicelab.unice'"
+            >
+              Play Store
+            </button>
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://apps.apple.com/us/app/unice/id6463777529'"
+            >
+              App Store
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="project__pic__container hover_project">
+          
+            <img
+              src="./assets/homeco.jpeg"
+              alt="homeco"
+              class="project-img"
+            />
+          
+        </div>
+          <h2 class="experience-sub-title project-title">HomeCo <span class="subtitle"><br>Real Estate Directory listing Flutter App</span></h2>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://codecanyon.net/item/homeco-real-estate-directory-listing-flutter-app/46302077'"
+            >
+              Live Demo
+            </button>
+            
+          </div>
+        </div>
+        
+        <div class="details-container color-container">
+          <div class="project__pic__container hover_project">
+          
+            <img
+              src="./assets/ecoshop.jpeg"
+              alt="ecoshop"
+              class="project-img"
+            />
+          
+          </div>
+          <h2 class="experience-sub-title project-title">EcoShop <span class="subtitle"><br>Multivendor Food, Grocery, Ecommerce Flutter App</span></h2>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://codecanyon.net/item/ecoshop-multivendor-food-grocery-ecommerce-flutter-app-admin-panel/42078956'"
+            >
+              Live Demo
+            </button>
+            
+          </div>
+        </div>
+        
+        <div class="details-container color-container">
+          <div class="project__pic__container hover_project">
+          
+            <img
+              src="./assets/walpie.webp"
+              alt="walpie"
+              class="project-img"
+            />
+          
+        </div>
+          <h2 class="experience-sub-title project-title">Walpie <span class="subtitle"><br>Wallpapers Collection</span></h2>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://play.google.com/store/apps/details?id=com.jibdara.app.walpie'"
+            >
+              Play Store
+            </button>
+            
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="project__pic__container hover_project">
+          
+            <img
+              src="./assets/artsicraft.webp"
+              alt="artsicraft"
+              class="project-img"
+            />
+          
+        </div>
+          <h2 class="experience-sub-title project-title">Artsicraft <span class="subtitle"><br>Crafts Product</span></h2>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://play.google.com/store/apps/details?id=com.artsicraft'"
+            >
+              Play Store
+            </button>
+            
+          </div>
+        </div>
+       
+      </div>
+
+    <img
+      src="./assets/arrow.png"
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='./#contact'"
+    />
+  </section>
+
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a href="mailto:nayeem.cse1@gmail.com">nayeem.cse1@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+
+      <footer>
+        <nav>
+          <div class="nav-links-container">
+            <ul class="nav-links">
+              <li><a href="#about">About</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        <p>Copyright &#169; 2023 Nayeemul Islam. All Rights Reserved.</p>
+      </footer>
+      <script src="script.js"></script>
 </body>
+
 </html>
