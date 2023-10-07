@@ -12,7 +12,13 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@300;400;500;600&display=swap"
     rel="stylesheet" />
-  <title>Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Nayeemul Islam</title>
+  <link rel = "icon" href =  
+"https://www.speedway-forum.co.uk/forums/uploads/monthly_2017_12/N_member_24917.png" 
+        type = "image/x-icon"> 
 </head>
 
 <body>
@@ -25,8 +31,12 @@
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
+
         </ul>
+
       </div>
+      </div>
+
     </nav>
     <nav id="hamburger-nav">
       <div class="logo">Nayeemul</div>
@@ -55,7 +65,8 @@
       <h1 class="title">Nayeemul Islam Durjoy</h1>
       <p class="section__text__p2">Mobile App Developer</p>
       <div class="btn-container">
-        <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">
+        <button class="btn btn-color-2"
+          onclick="window.open('./assets/Nayeemul_Islam_Durjoy_Flutter_Developer-example.pdf')">
           Download CV
         </button>
         <button class="btn btn-color-1" onclick="location.href='./#contact'">
@@ -63,13 +74,15 @@
         </button>
       </div>
       <p class="follow_me">Follow Me</p>
-      <div id="socials-container">
-        <img src="./assets/facebook.png" alt="My Facebook profile" class="icon"
-          onclick="location.href='https://facebook.com/nayeem.islam.90/'" />
-        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
-          onclick="location.href='https://linkedin.com/in/nayeem-islam-durjoy/'" />
-        <img src="./assets/github.png" alt="My Github profile" class="icon"
-          onclick="location.href='https://github.com/NayeemCseMu'" />
+      <div>
+        <div id="socials-container">
+          <img src="./assets/facebook.png" alt="My Facebook profile" class="icon"
+            onclick="location.href='https://facebook.com/nayeem.islam.90/'" />
+          <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
+            onclick="location.href='https://linkedin.com/in/nayeem-islam-durjoy/'" />
+          <img src="./assets/github.png" alt="My Github profile" class="icon"
+            onclick="location.href='https://github.com/NayeemCseMu'" />
+        </div>
       </div>
     </div>
   </section>
@@ -107,7 +120,7 @@
     </div>
     <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
   </section>
-  
+
   <section id="experience">
     <p class="section__text__p1">Explore My</p>
     <h1 class="title">Experience</h1>
@@ -189,7 +202,7 @@
             </article>
           </div>
         </div>
-        <div class="work-timeline-container">
+        <div class="details-container">
           <h2 class="experience-sub-title">Timeline</h2>
           <div class="timeline">
             <div class="timeline-item">
@@ -198,22 +211,22 @@
               </div>
               <p class="tl-duration">Apr, 2022 - present</p>
               <h4>Sr. Flutter Developer<span> - Quomodosoft</span></h4>
-              <ol>
-                <li class="role-li">
+              <ul class="role-list">
+                <li>
                   Mobile app team lead
                 </li>
-                <li class="role-li">
+                <li>
                   Practicing business logic
 
                 </li>
-                <li class="role-li">
+                <li>
                   Integrate chat and payment method
 
                 </li>
-                <li class="role-li">
+                <li>
                   RestAPI & third-party SDK integration
                 </li>
-              </ol>
+              </ul>
               <!-- <p class="role-description-text">
                 Responsibility is to converting figma design into flutter | interact with clients to transfer their
                 requirements in real time applications | write clean code using bloc pattern | frequently maintain
@@ -228,19 +241,19 @@
               </div>
               <p class="tl-duration">Dec, 2021 - March, 2022</p>
               <h4>Flutter Developer<span> - Salah Software</span></h4>
-              <ol>
-                <li class="role-li">
+              <ul class="role-list">
+                <li>
                   Developed interactive UI
                 </li>
-                <li class="role-li">
+                <li>
                   RestAPI and SDK integration
 
                 </li>
-                <li class="role-li">
+                <li>
                   Write native android code
 
                 </li>
-              </ol>
+              </ul>
             </div>
 
             <div class="timeline-item">
@@ -264,151 +277,114 @@
   <section id="projects">
     <p class="section__text__p1">Browse My Recent</p>
     <h1 class="title">Projects</h1>
-    
-      <div class="project__containers">
-        
-        <div class="details-container color-container">
-          <div class="project__pic__container">
-          
-            <img
-              src="./assets/shopo.png"
-              alt="shopo"
-              class="project-img"
-            />
-          
+
+    <div class="project__containers">
+
+      <div class="details-container color-container">
+        <div class="project__pic__container">
+
+          <img src="./assets/shopo.png" alt="shopo" class="project-img" />
+
         </div>
-          <h4 class="experience-sub-title project-title">ShopO <span class="subtitle"><br>Multivendor ecommerce solution</span></h4>
-          <div class="btn-container">
-            
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://codecanyon.net/item/shopo-multivendor-ecommerce-flutter-app/39965496'"
-            >
-              Live Demo
-            </button>
-          </div>
+        <h4 class="experience-sub-title project-title">ShopO <span class="subtitle"><br>Multivendor ecommerce
+            solution</span></h4>
+        <div class="btn-container">
+
+          <button class="btn btn-color-2 project-btn"
+            onclick="location.href='https://codecanyon.net/item/shopo-multivendor-ecommerce-flutter-app/39965496'">
+            Live Demo
+          </button>
         </div>
-        <div class="details-container color-container">
-          <div class="project__pic__container">
-          
-            <img
-              src="./assets/unice.jpg"
-              alt="ShopO"
-              class="project-img"
-            />
-          
+      </div>
+      <div class="details-container color-container">
+        <div class="project__pic__container">
+
+          <img src="./assets/unice.jpg" alt="ShopO" class="project-img" />
+
         </div>
-          <h2 class="experience-sub-title project-title">UNICE <span class="subtitle"><br>UNICE INTRODUTION APP</span></h2>
-          <div class="btn-container">
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://play.google.com/store/apps/details?id=com.unicelab.unice'"
-            >
-              Play Store
-            </button>
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://apps.apple.com/us/app/unice/id6463777529'"
-            >
-              App Store
-            </button>
-          </div>
+        <h2 class="experience-sub-title project-title">UNICE <span class="subtitle"><br>UNICE INTRODUTION APP</span>
+        </h2>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn"
+            onclick="location.href='https://play.google.com/store/apps/details?id=com.unicelab.unice'">
+            <i class="fab fa-google-play"> Play Store</i>
+
+          </button>
+          <button class="btn btn-color-2 project-btn"
+            onclick="location.href='https://apps.apple.com/us/app/unice/id6463777529'">
+            <i class="fab fa-apple"> App Store</i>
+          </button>
         </div>
-        <div class="details-container color-container">
-          <div class="project__pic__container hover_project">
-          
-            <img
-              src="./assets/homeco.jpeg"
-              alt="homeco"
-              class="project-img"
-            />
-          
+      </div>
+      <div class="details-container color-container">
+        <div class="project__pic__container hover_project">
+
+          <img src="./assets/homeco.jpeg" alt="homeco" class="project-img" />
+
         </div>
-          <h2 class="experience-sub-title project-title">HomeCo <span class="subtitle"><br>Real Estate Directory listing Flutter App</span></h2>
-          <div class="btn-container">
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://codecanyon.net/item/homeco-real-estate-directory-listing-flutter-app/46302077'"
-            >
-              Live Demo
-            </button>
-            
-          </div>
+        <h2 class="experience-sub-title project-title">HomeCo <span class="subtitle"><br>Real Estate Directory listing
+            Flutter App</span></h2>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn"
+            onclick="location.href='https://codecanyon.net/item/homeco-real-estate-directory-listing-flutter-app/46302077'">
+            Live Demo
+          </button>
+
         </div>
-        
-        <div class="details-container color-container">
-          <div class="project__pic__container hover_project">
-          
-            <img
-              src="./assets/ecoshop.jpeg"
-              alt="ecoshop"
-              class="project-img"
-            />
-          
-          </div>
-          <h2 class="experience-sub-title project-title">EcoShop <span class="subtitle"><br>Multivendor Food, Grocery, Ecommerce Flutter App</span></h2>
-          <div class="btn-container">
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://codecanyon.net/item/ecoshop-multivendor-food-grocery-ecommerce-flutter-app-admin-panel/42078956'"
-            >
-              Live Demo
-            </button>
-            
-          </div>
-        </div>
-        
-        <div class="details-container color-container">
-          <div class="project__pic__container hover_project">
-          
-            <img
-              src="./assets/walpie.webp"
-              alt="walpie"
-              class="project-img"
-            />
-          
-        </div>
-          <h2 class="experience-sub-title project-title">Walpie <span class="subtitle"><br>Wallpapers Collection</span></h2>
-          <div class="btn-container">
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://play.google.com/store/apps/details?id=com.jibdara.app.walpie'"
-            >
-              Play Store
-            </button>
-            
-          </div>
-        </div>
-        <div class="details-container color-container">
-          <div class="project__pic__container hover_project">
-          
-            <img
-              src="./assets/artsicraft.webp"
-              alt="artsicraft"
-              class="project-img"
-            />
-          
-        </div>
-          <h2 class="experience-sub-title project-title">Artsicraft <span class="subtitle"><br>Crafts Product</span></h2>
-          <div class="btn-container">
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://play.google.com/store/apps/details?id=com.artsicraft'"
-            >
-              Play Store
-            </button>
-            
-          </div>
-        </div>
-       
       </div>
 
-    <img
-      src="./assets/arrow.png"
-      alt="Arrow icon"
-      class="icon arrow"
-      onclick="location.href='./#contact'"
-    />
+      <div class="details-container color-container">
+        <div class="project__pic__container hover_project">
+
+          <img src="./assets/ecoshop.jpeg" alt="ecoshop" class="project-img" />
+
+        </div>
+        <h2 class="experience-sub-title project-title">EcoShop <span class="subtitle"><br>Multivendor Food, Grocery,
+            Ecommerce Flutter App</span></h2>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn"
+            onclick="location.href='https://codecanyon.net/item/ecoshop-multivendor-food-grocery-ecommerce-flutter-app-admin-panel/42078956'">
+            Live Demo
+          </button>
+
+        </div>
+      </div>
+
+      <div class="details-container color-container">
+        <div class="project__pic__container hover_project">
+
+          <img src="./assets/walpie.webp" alt="walpie" class="project-img" />
+
+        </div>
+        <h2 class="experience-sub-title project-title">Walpie <span class="subtitle"><br>Wallpapers Collection</span>
+        </h2>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn"
+            onclick="location.href='https://play.google.com/store/apps/details?id=com.jibdara.app.walpie'">
+            <i class="fab fa-google-play"> Play Store</i>
+          </button>
+
+        </div>
+      </div>
+      <div class="details-container color-container">
+        <div class="project__pic__container hover_project">
+
+          <img src="./assets/artsicraft.webp" alt="artsicraft" class="project-img" />
+
+        </div>
+        <h2 class="experience-sub-title project-title">Artsicraft <span class="subtitle"><br>Crafts Product</span></h2>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn"
+            onclick="location.href='https://play.google.com/store/apps/details?id=com.artsicraft'">
+            <i class="fab fa-google-play"> Play Store</i>
+          </button>
+
+        </div>
+      </div>
+
+    </div>
+
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
   </section>
 
   <section id="contact">
@@ -426,20 +402,21 @@
     </div>
   </section>
 
-      <footer>
-        <nav>
-          <div class="nav-links-container">
-            <ul class="nav-links">
-              <li><a href="#about">About</a></li>
-              <li><a href="#experience">Experience</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </div>
-        </nav>
-        <p>Copyright &#169; 2023 Nayeemul Islam. All Rights Reserved.</p>
-      </footer>
-      <script src="script.js"></script>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2023 Nayeemul Islam. All Rights Reserved.</p>
+  </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
