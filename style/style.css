@@ -9,7 +9,7 @@
 :root {
   --color-primary: #ffffff;
   --color-secondary: #fffaf0;
-  --color-white: #454e56;
+  --color-white: #ffffff;
   --color-black: #000;
   --color-grey0: #f8f8f8;
   --color-grey-1: #6c7983;
@@ -18,12 +18,15 @@
   --color-grey-4: #454e56;
   --color-grey-5: #f8f8f8;
   --color-grey-6: #12181b;
+  --color-card-bg: #FAFAFA;
+  --text-color: #000;
+  --btn-bg-color: #000;
 }
 
 .dark-mode {
   --color-primary: #191d2b;
-  --color-secondary: #27ae60;
-  --color-white: #ffffff;
+  --color-secondary: #191d2b75;
+  --color-white: #454e56;
   --color-black: #000;
   --color-grey0: #f8f8f8;
   --color-grey-1: #dbe1e8;
@@ -32,7 +35,10 @@
   --color-grey-4: #454e56;
   --color-grey-5: #2a2e35;
   --color-grey-6: #12181b;
+  --color-card-bg: #25252683;
+  --text-color: #fff;
   --br-sm-2: 14px;
+  --btn-bg-color: #000
   --box-shadow-1: 0 3px 15px rgba(0, 0, 0, 0.3);
 }
 
@@ -51,12 +57,12 @@ html {
 .theme-btn {
   top: 5%;
   right: 3%;
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   background-color: var(--color-grey-4);
   cursor: pointer;
-  position: fixed;
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -74,7 +80,7 @@ html {
 
 header {
   background-color: var(--color-secondary);
-  color: #000;
+  color: var(--text-color);
   padding: 10px;
   text-align: center;
 }
@@ -107,7 +113,7 @@ nav {
 
 nav a {
   text-decoration: none;
-  color: var(--color-black);
+  color: var(--text-color);
   font-weight: bold;
 }
 
@@ -129,6 +135,7 @@ nav a {
   height: 24px;
   width: 30px;
   cursor: pointer;
+  
 }
 
 .hamburger-icon span {
@@ -194,7 +201,7 @@ nav a {
 /* SECTIONS */
 section {
   padding-top: 4vh;
-  height: 96vh;
+  /* height: 96vh; */
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
@@ -234,6 +241,7 @@ section {
   border-color: rgb(163, 163, 163);
   transition: all 0.2s ease-in-out;
   transform: translateY(-5px);
+  border: var(--text-color) 0.05rem solid;
   box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.3);
 }
 
@@ -250,6 +258,7 @@ section {
   align-self: center;
   text-align: center;
   padding: 24, 4;
+  color: var(--text-color);
 }
 
 .section__text p {
@@ -259,6 +268,8 @@ section {
 .section__text__p1 {
   font-size: 1rem;
   text-align: center;
+  color: var(--color-grey-1);
+ 
 }
 
 .section__text__p2 {
@@ -269,6 +280,7 @@ section {
 .title {
   font-size: 2rem;
   text-align: center;
+  color: var(--text-color);
 }
 
 #socials-container {
@@ -314,7 +326,8 @@ section {
 
 .btn-color-1,
 .btn-color-2 {
-  border: rgb(53, 53, 53) 0.1rem solid;
+  border: none;
+  color: var(--text-color);
 }
 
 .btn-color-1:hover,
@@ -325,11 +338,11 @@ section {
 .btn-color-1,
 .btn-color-2:hover {
   background: rgb(53, 53, 53);
-  color: white;
+  color: #fff;
 }
 
 .btn-color-1:hover {
-  background: rgb(0, 0, 0);
+  background: #000;
 }
 
 .btn-color-2 {
@@ -357,20 +370,17 @@ section {
 }
 
 
-.about-details-container {
-  justify-content: center;
-  flex-direction: column;
-  display: flex;
-  justify-content: center;
-}
 
 .about-containers,
 .about-details-containers {
   display: flex;
+  justify-content: center;
+  color: var(--text-color);
 }
 
 .text-container {
   margin-right: 0rem;
+  color: var(--color-grey-2);
 }
 
 .about-info-title {
@@ -403,7 +413,7 @@ section {
   padding: 1.5rem;
   flex: 1;
   border-radius: 1rem;
-  background: white;
+  background: var(--color-card-bg);
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   text-align: center;
@@ -411,7 +421,7 @@ section {
 }
 
 .details-container:hover{
-  background-color: #fff;
+  background-color: var(--color-card-bg);
 }
 
 
@@ -538,7 +548,6 @@ section {
 
 #experience {
   position: relative;
-  margin-bottom: 4rem;
 }
 
 .experience-sub-title {
@@ -546,21 +555,19 @@ section {
   font-weight: 600;
   font-size: 1.4rem;
   margin-bottom: 2rem;
+  color: var(--color-grey-1);
 }
 
 .experience-details-container {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin-bottom: 4rem;
-  
 }
 
 
 
 .article-container {
   display: flex;
-
   text-align: initial;
   flex-wrap: wrap;
   flex-direction: row;
@@ -573,10 +580,12 @@ article {
   width: 10rem;
   justify-content: space-around;
   gap: 0.5rem;
+  color: var(--text-color);
 }
 
 article .icon {
   cursor: default;
+  color: var(--text-color);
 }
 
 /*TIMELINE*/
@@ -592,12 +601,13 @@ article .icon {
   margin-bottom: 2rem;
   padding-left: 2rem;
   text-align: start;
-  border-left: 1px solid var(--color-grey-5);
+  color: var(--text-color);
+  border-left: 1px solid var(--color-grey-3);
 }
 
 .tl-icon {
   position: absolute;
-  left: -15px;
+  left: -17px;
   top: 0;
   background-color: var(--color-black);
   width: 30px;
@@ -615,6 +625,7 @@ article .icon {
   font-size: 0.9rem;
   font-style: normal;
   font-weight: 300;
+  color: var(--text-color);
 }
 
 .role-list li::before{
@@ -642,7 +653,7 @@ article .icon {
   background-color: var(--color-grey-5);
   border-radius: 15px;
   display: inline-block;
-  font-size: 12px;
+  font-size: 10px;
   text-transform: uppercase;
   font-weight: 500;
 }
@@ -655,16 +666,15 @@ article .icon {
 
 #projects {
   position: relative;
-  margin-bottom: 4rem;
+  flex-direction: column;
 }
 
 .project__containers {
-  margin-top: 2rem;
   display: grid;
   position: relative;
-  flex-direction: column;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
+  margin-top: 2rem;
 }
 
 .color-container {
@@ -672,7 +682,7 @@ article .icon {
   padding-bottom: 2rem;
   border: rgb(53, 53, 53) 0.0rem solid;
   border-color: rgb(163, 163, 163);
-  background: rgb(250, 250, 250);
+  background: var(--color-card-bg);
 
 }
 
@@ -690,29 +700,25 @@ article .icon {
 
 .project-title {
   margin: 1rem;
-  color: black;
+  color: var(--color-grey-1);
 
 }
 
 .subtitle {
-  color: rgb(85, 85, 85);
+  color: var(--color-grey-3);
   font-weight: 400;
   font-size: 1rem;
   margin-bottom: 1rem;
 }
 
 .project-btn {
-  color: black;
+  color: var(--text-color);
   border-color: rgb(163, 163, 163);
 }
 
 /* CONTACT */
-.timeline-item{
-
-}
 #contact {
   position: relative;
-  margin-top: 24rem;
   
 }
 
@@ -745,6 +751,7 @@ article .icon {
 
 .email-icon {
   height: 2.5rem;
+  
 }
 
 /* FOOTER SECTION */
@@ -756,4 +763,5 @@ footer {
 
 footer p {
   text-align: center;
+  color: var(--text-color);
 }
