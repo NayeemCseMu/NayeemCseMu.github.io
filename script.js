@@ -6,7 +6,9 @@ const messageInput = document.getElementById("message");
 const responseMessage = document.getElementById("response-message");
 
 // Event listener for form submission
-contactForm.addEventListener("submit", function (event) {
+contactForm.addEventListener("submit", submitFunction);
+
+const submitFunction = function (event) {
     event.preventDefault(); // Prevent the form from submitting normally
 
     // Perform basic form validation
@@ -21,7 +23,7 @@ contactForm.addEventListener("submit", function (event) {
     contactForm.reset(); // Clear the form
 
     // You can add code here to send the form data to a server or API
-});
+};
 
 function toggleMenu() {
     const menu = document.querySelector(".menu-links");
